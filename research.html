@@ -352,6 +352,10 @@
   .area h3{ font-size:17.5px; }
   .area p{ font-size:15px; color:var(--text-2); max-width:62ch; }
 
+  .repo-link{ display:inline-flex; gap:6px; margin-top:28px; font-size:14.5px; color:var(--text); border-bottom:1px solid var(--border); padding-bottom:2px; }
+  .repo-link span{ transition:transform .2s ease; }
+  .repo-link:hover{ color:var(--accent); border-color:var(--accent); }
+  .repo-link:hover span{ transform:translateX(3px); }
   .r-close{ padding:80px 0; border-top:1px solid var(--border-soft); }
   .r-close h2{ font-size:clamp(22px,2.6vw,28px); }
   .r-close .links{ display:flex; gap:24px; margin-top:20px; flex-wrap:wrap; }
@@ -406,7 +410,7 @@
       <h2>MemoryWatch</h2>
       <span class="status">In progress</span>
     </div>
-    <p class="proj-intro">A host-based intrusion detection system for memory-based attacks. It compares a classical anomaly detector, Isolation Forest, against ZZFeatureMap quantum kernels. Both are tested on simulated memory attack datasets and on real-world malware data from CIC-MalMem-2022. The open question is whether quantum feature-space separation gives a measurable advantage in multiclass attack classification.</p>
+    <p class="proj-intro">A host-based intrusion detection system for memory-based attacks, built as a team project in EPITA's Action Learning programme. It compares a classical anomaly detector, Isolation Forest, against ZZFeatureMap quantum kernels. Both are tested on simulated memory attack datasets and on real-world malware data from CIC-MalMem-2022. The open question is whether quantum feature-space separation gives a measurable advantage in multiclass attack classification.</p>
 
     <div class="pipeline">
       <svg viewBox="0 0 760 170" fill="none" role="img" aria-label="MemoryWatch pipeline: data sources, feature engineering, two models in parallel, threshold calibration, evaluation">
@@ -452,9 +456,9 @@
       <div class="fact"><div class="k">Models</div><div class="v">Isolation Forest, ZZFeatureMap quantum kernel</div></div>
       <div class="fact"><div class="k">Data</div><div class="v">Simulated memory attacks, CIC-MalMem-2022</div></div>
       <div class="fact"><div class="k">Metrics</div><div class="v">FPR, recall, F1, AUROC</div></div>
-      <div class="fact"><div class="k">Status</div><div class="v">In progress</div></div>
+      <div class="fact"><div class="k">Context</div><div class="v">EPITA Action Learning team project, Spring 2026</div></div>
     </div>
-    <!-- TODO: add the MemoryWatch GitHub repository link here once it is public -->
+    <a class="repo-link" href="https://github.com/vigneshoffsec/MemoryWatch" target="_blank" rel="noopener">View repository on GitHub <span>&rarr;</span></a>
   </div>
 </section>
 
